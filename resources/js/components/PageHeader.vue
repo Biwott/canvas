@@ -3,7 +3,7 @@
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12">
             <nav class="navbar d-flex px-0 py-1">
                 <router-link :to="{ name: 'home' }" class="navbar-brand hover font-weight-bolder font-serif mr-3">
-                    Canvas
+                    Start Blog and you Can Earn Upto Ksh 200 Per Blog!
                 </router-link>
 
                 <slot name="status" />
@@ -38,20 +38,20 @@
                         />
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        <h6 class="dropdown-header">
+                        <!-- <h6 class="dropdown-header">
                             <strong>{{ settings.user.name }}</strong>
                             <br />
                             {{ settings.user.email }}
-                        </h6>
+                        </h6> -->
 
                         <div class="dropdown-divider" />
 
-                        <router-link
+                        <!-- <router-link
                             :to="{ name: 'edit-user', params: { id: settings.user.id } }"
                             class="dropdown-item"
                         >
                             {{ trans.your_profile }}
-                        </router-link>
+                        </router-link> -->
                         <router-link :to="{ name: 'posts' }" class="dropdown-item">
                             <span>{{ trans.posts }}</span>
                         </router-link>
@@ -70,9 +70,9 @@
 
                         <div class="dropdown-divider" />
 
-                        <router-link :to="{ name: 'edit-settings' }" class="dropdown-item">
+                        <!-- <router-link :to="{ name: 'edit-settings' }" class="dropdown-item">
                             <span>{{ trans.settings }}</span>
-                        </router-link>
+                        </router-link> -->
                         <a href="" class="dropdown-item" @click.prevent="logout">
                             {{ trans.sign_out }}
                         </a>
